@@ -9,14 +9,15 @@ section:nth-of-type(2n){background-color:#eee;}
     border:solid thin black;}
 /* Animated Bar */
  #wrapper>div{
+    width: 0px;
     height:100%;
     background-color:green;
-    animation-name:loading;
+    animation:loading 5s infinite;
     }
 /* Animation */
   @keyframes loading {
-    from {  }
-    to   {  }
+    from { width: 0px }
+    to   { width: 200px }
     }
 /* **************************************** */
 /* Progress Circle Animation using CSS only */ 
